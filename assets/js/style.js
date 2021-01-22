@@ -6,13 +6,15 @@ var APIkey = "f28e06375945149aa9a3231cdaaa0e87"
 
 //https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 fetch (
-  `api.openweathermap.org/data/2.5/weather?q=${searchTerm}&appid=${APIkey}`
+  `https://api.openweathermap.org/data/2.5/weather?q=${searchTerm}&appid=${APIkey}`
 )
 .then(function(response) {
   return response.json();
 })
-.then(function(response))
-console.log(response)
+.then(function(response) {
+  console.log(response);
+})
+
 
 // render info from api on the page 
 
