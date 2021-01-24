@@ -1,4 +1,7 @@
 // user search bar function for all us cities 
+$(document).ready(function() {
+
+
 var searchTerm = "Tucson";
 
 // displays current and future conditions for searched city and save that search to local storage
@@ -18,3 +21,5 @@ fetch (
 
 // render info from api on the page 
 
+// document .ready (jquery)
+});
