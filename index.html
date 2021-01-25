@@ -9,19 +9,55 @@
 </head>
 <body>
   <header>
-    <nav class=“navbar navbar-dark bg-dark text-center”>
-      <div class=“container-fluid text-center”>
-        <span class=“navbar-brand text-center mb-0 h1”>Weather Dashboard</span>
-      </div>
-    </nav>
+    <h1>Weather Dashboard</h1>
   </header>
+
   <main>
+    <!--search bar with magnifying glass button-->
+    <div class="container">
+      <div class="row">
+        <div class="col-6" class="card" class="float-left">
+          <div class="input-group">
+            <div class="form-outline">
+              <input id="search-input" type="search"  class="searchTerm"/>
+              <label class="form-label" for="form1">Search</label>
+            </div>
+            <button id="search-button" type="button" class="btn btn-primary">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <br>
+
+          <div class="col-8">
+            <ul class="list-group">
+              <li class="list-group-item"></li>
+              <li class="list-group-item"></li>
+              <li class="list-group-item"></li>
+              <li class="list-group-item"></li>
+              <li class="list-group-item"></li>
+            </ul>
+          </div>
+
+          <div class="col-8">
+            <div class="extendedForecast">
+              <div class="card-body align-items-center">
+                <div class="cardContent" id="city"></div>
+                <div class="cardContent" id="icon"></div>
+                <div class="cardContent" id="temp"></div>
+                <div class="cardContent" id="humidity"></div>
+                <div class="cardContent" id="wind-speed"></div>
+                <div class="cardContent" id="uv-index"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
   </main>
+  
 
-  <footer>
-    
-  </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
   <script src="./assets/js/script.js"></script>
 </body>
