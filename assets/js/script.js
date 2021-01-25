@@ -1,16 +1,17 @@
- $(document).ready(function() {
+$(document).ready(function() {
 
-  var cityInputEl = document.querySelector("#search-input")
+  var cityInputEl = document.querySelector("#search-input");
 
   // user search bar function for all us cities 
-  var searchTerm = cityInputEl.value.trim();
+  var searchTerm = cityInputEl.nodeValue.trim();
 
   if (searchTerm) {
-   getCityWeather(searchTerm); 
+    getCityWeather(searchTerm);
   } else {
     alert("Please enter a city name.")
-  }
-    
+  };
+  
+
  
   // grab searchTerm from HTML input tag
   var getCityWeather = function(city) {
@@ -27,10 +28,10 @@
     // make HTML elements ( cards, h1 tags) from this data
 
     // put past searches into localStorage.
-  });
-
+    });
+  }
 
   // render info from api on the page 
 
   // document .ready (jquery)
-  }});
+  });
