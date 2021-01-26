@@ -12,48 +12,39 @@
     <h1>Weather Dashboard</h1>
   </header>
 
-  <main>
-    <!--search bar with magnifying glass button-->
-    <div class="container">
-      <div class="row">
-        <div class="col-6" class="card" class="float-left">
-          <div class="input-group">
-            <div class="form-outline">
-              <input id="search-input" type="search"  class="searchTerm"/>
-              <label class="form-label" for="form1">Search</label>
-            </div>
-            <button id="search-button" type="button" class="btn btn-primary">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-          <br>
+  <main class=" flex-row justify-space-between">
+    <div class="col-12 col-md-4">
 
-          <div class="col-8">
-            <ul class="list-group">
-              <li class="list-group-item"></li>
-              <li class="list-group-item"></li>
-              <li class="list-group-item"></li>
-              <li class="list-group-item"></li>
-              <li class="list-group-item"></li>
-            </ul>
-          </div>
+      <div class="card">
+        <h3>Search By City</h3>
+        <form id="user-search" class="card-body">
+          <input id="searchTerm" class="citySearch">
+          <button id="searchBtn" type="submit" class="btn"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
 
-          <div class="col-8">
-            <div class="extendedForecast">
-              <div class="card-body align-items-center">
-                <div class="cardContent" id="city"></div>
-                <div class="cardContent" id="icon"></div>
-                <div class="cardContent" id="temp"></div>
-                <div class="cardContent" id="humidity"></div>
-                <div class="cardContent" id="wind-speed"></div>
-                <div class="cardContent" id="uv-index"></div>
-              </div>
-            </div>
-          </div>
-
+      <div class="card">
+        <h3>Search History</h3>
+        <div id="searchHistory" class="card-body">
+          <ol>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+          </ol>
         </div>
       </div>
     </div>
+
+    <div class="col-12 col-md-8">
+      <h2>Current Weather</h2>
+      <div id="currentWeather" class="weather-display">
+
+      </div>
+    </div>
+    
 
   </main>
   
